@@ -3,7 +3,7 @@
     height: 100vh;
 }
 
-.messager-feed {
+#messager-feed {
     overflow-x: hidden;
     overflow-y: auto;
     height: 90%;
@@ -13,7 +13,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.messager-feed > :first-child {
+#messager-feed > :first-child {
     margin-top: auto !important;
 }
 
@@ -34,7 +34,7 @@
 }
 
 
-.messager-user-input {
+#messager-user-input {
     min-width: 100%;
     display: flex;
     flex-wrap: nowrap;

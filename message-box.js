@@ -1,35 +1,38 @@
+// The message-feed and messager-user-input will be added to alot. Only access it once
+const Feed = document.getElementById('messager-feed');
+const Input = document.getElementById('messager-user-input');
 
-const messageBox = document.getElementById('message-box');
+// Add a message to the message-feed
+function addMessage(msg, isUser) {
 
-console.log(messageBox)
-
-function addMessage(msg, position) {
-    let message = document.createElement('div');
-    let container = document.createElement('div');
-    if (position === 'left') {
-        message.classList.add('message-left')
-    } else {
-        message.classList.add('message-right')
+    const words = Util.makeElement('p', 'message-content')
+    words.innerText = "jesus christ";
+    const message = Util.makeElement('div', 'message-box');
+    // find who gave this message
+    if (isUser) {
+        message.className += ' right-align';
     }
-    message.innerHTML += msg;
-    message.classList.add('message');
-    container.className = 'message-container';
-    container.appendChild(message);
-    messageBox.appendChild(container);
-    console.log('it was called');
+    message.appendChild(words);
+    // add message to feed
+    Feed.appendChild(message);
 }
 
-addMessage('super-duper', 'left')
-addMessage('megladon', 'right')
-addMessage('super-duper', 'left')
-addMessage('megladon', 'right')
-addMessage('super-duper', 'left')
-addMessage('megladon', 'right')
-addMessage('super-duper', 'left')
-addMessage('megladon', 'right')
-addMessage('super-duper', 'left')
-addMessage('megladon', 'right')
-addMessage('super-duper', 'left')
-addMessage('megladon', 'right')
-addMessage('super-duper', 'left')
-addMessage('megladon', 'right')
+// Give user another response
+function addUserChoice(msg) {
+    const choice = Util.makeElement('div', 'suggestion');
+    choice.innerText = msg;
+    Input.appendChild(choice);
+}
+
+setTimeout(() => {
+    addMessage('hi im pau', true)
+    addUserChoice('nahhhh thanks')
+}, 500)
+
+const Util = {
+    makeElement: (type, className) => {
+        const el = document.createElement(type);
+        el.className = className;
+        return el;
+    }
+}
