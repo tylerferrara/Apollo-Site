@@ -1,0 +1,45 @@
+.outer-box {
+    display: flex;
+    justify-content: center;
+}
+
+#message-box-container {
+    position: relative;
+    width: 30rem;
+    background-color: lightgray;
+    height: 30rem;
+}
+
+#message-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* align-items: flex-end; */
+     /* background-color: aqua; */
+}
+
+.message-container {
+    width: 100%;
+}
+
+.message {
+    border: 1px solid black;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    display: inline-block;
+}
+
+#message-bar {
+    position: absolute;
+    bottom: 0px;
+    /* top: 10px; */
+    height: 3px;
+    background-color: black;
+    width: 100%;
+}
+

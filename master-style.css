@@ -1,0 +1,10 @@
+html, body {
+    margin: 0;
+    background-color: lightcoral;
+    overflow: auto;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+}

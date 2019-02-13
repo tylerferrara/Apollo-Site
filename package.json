@@ -1,0 +1,19 @@
+{
+  "name": "apollo-site",
+  "version": "1.0.0",
+  "description": "Website to advertise Apollo-Bot Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylerferrara/Apollo-Site.git"
+  },
+  "author": "Tyler Ferrara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylerferrara/Apollo-Site/issues"
+  },
+  "homepage": "https://github.com/tylerferrara/Apollo-Site#readme",
+}
