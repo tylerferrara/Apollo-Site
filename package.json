@@ -4,6 +4,7 @@
   "description": "Website to advertise Apollo-Bot Project",
   "main": "index.js",
   "scripts": {
+    "dev": "live-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,4 +17,7 @@
     "url": "https://github.com/tylerferrara/Apollo-Site/issues"
   },
   "homepage": "https://github.com/tylerferrara/Apollo-Site#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
 }
