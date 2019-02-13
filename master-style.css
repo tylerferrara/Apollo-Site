@@ -1,6 +1,11 @@
+:root {
+    --orange-primary: #FFC951;
+    --phone-width: 600px;
+    font-family: 'Open Sans', sans-serif;
+}
+
 html, body {
     margin: 0;
-    background-color: lightcoral;
     overflow: auto;
 }
 
