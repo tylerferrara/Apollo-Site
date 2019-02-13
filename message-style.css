@@ -1,77 +1,62 @@
-.outer-box {
-    display: flex;
-    justify-content: center;
-    /* height: 100vh; */
-}
-
-#message-box-container {
-    width: 30rem;
+.messager-container {
+    background-color: aquamarine;
     height: 100vh;
+}
+
+.messager-feed {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 90%;
     display: flex;
     flex-direction: column;
-    /* position: relative; */
+    background-color:steelblue;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.messager-feed > :first-child {
+    margin-top: auto !important;
 }
 
-#message-box {
-    background-color: rgb(248, 248, 248);
-    width: 100%;
-    /* height: 90%; */
-    height: 90vh;
-    /* flex: 1; */
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    box-sizing: border-box;
-    /* overflow-y: scroll; */
-}
-
-.message-right {
-    float: right;
-    background-color: rgb(27, 139, 173);
-    color: white;
-}
-
-.message-left {
-    background-color: var(--orange-primary);
-    color: rgb(85, 58, 1);
-}
-
-.message-container {
-    width: 100%;
-    /* height: 100%; */
-    /* height: 3rem; */
-    /* min-height: min-content; */
-    /* height: inherit; */
-}
-
-.message {
-    /* height: 100%; */
-    margin-bottom: 2rem;
-    border-radius: 20px;
-    padding: 1rem;
+.message-box {
     display: inline-block;
+    background-color: silver;
+    margin-bottom: 1rem;
+    max-width: 70%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 15px;
 }
 
-#message-bar {
-    height: 3px;
-    background-color: rgb(66, 66, 66);
-    width: 100%;
+.message-box.right-align {
+    background-color: rgb(216, 245, 242);
+    margin-left: auto;
+    float: right;
 }
 
-#user-input {
-    height: 4rem;
-    background-color: lightgray;
-    /* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
+
+.messager-user-input {
+    min-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 10%;
+    background-color: azure;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
-@media screen and (max-width: 600px) {
-    #message-box {
-        height: 100%;
-    }
-    #message-box-container {
-        width: 100vw;
-    }
+.suggestion {
+    height: 2rem;
+    width: auto;
+    display: inline-block;
+    background-color: aqua;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 2rem;
+    border-radius: 50px;
+    margin-left: 1rem;
 }
