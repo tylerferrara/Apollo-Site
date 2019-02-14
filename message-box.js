@@ -6,7 +6,7 @@ const Input = document.getElementById('messager-user-input');
 function addMessage(msg, isUser) {
 
     const words = Util.makeElement('p', 'message-content')
-    words.innerText = "jesus christ";
+    words.innerText = msg;
     const message = Util.makeElement('div', 'message-box');
     // find who gave this message
     if (isUser) {
@@ -26,13 +26,10 @@ function addMessage(msg, isUser) {
 function addUserChoice(msg) {
     const choice = Util.makeElement('div', 'suggestion');
     choice.innerText = msg;
+    choice.onclick = function() {choiceSelectHandler(choice)};
     Input.appendChild(choice);
 }
 
-setTimeout(() => {
-    addMessage('hi im pau', true)
-    addUserChoice('nahhhh thanks')
-}, 2000)
 
 const Util = {
     makeElement: (type, className) => {
@@ -42,6 +39,12 @@ const Util = {
     }
 }
 
-// setInterval(() => {
-//     addMessage('hi im pau', true);
-// }, 2000);
+// Handle user choice selection
+function choiceSelectHandler(el) {
+    console.log(el.innerText)
+}
+
+setTimeout(() => {
+    addMessage('hi im paul', true)
+    addUserChoice('nahhhh thanks')
+}, 2000)
