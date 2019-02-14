@@ -26,6 +26,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 15px;
+    animation: slidein 0.5s ease-in;
 }
 
 .message-box.right-align {

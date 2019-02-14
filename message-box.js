@@ -15,6 +15,11 @@ function addMessage(msg, isUser) {
     message.appendChild(words);
     // add message to feed
     Feed.appendChild(message);
+    // Feed.scrollIntoView(true)
+    message.scrollIntoView({
+        behavior: 'smooth' 
+    });
+    // Feed.scrollTop = Feed.scrollHeight;
 }
 
 // Give user another response
@@ -27,7 +32,7 @@ function addUserChoice(msg) {
 setTimeout(() => {
     addMessage('hi im pau', true)
     addUserChoice('nahhhh thanks')
-}, 500)
+}, 2000)
 
 const Util = {
     makeElement: (type, className) => {
@@ -36,3 +41,7 @@ const Util = {
         return el;
     }
 }
+
+// setInterval(() => {
+//     addMessage('hi im pau', true);
+// }, 2000);
