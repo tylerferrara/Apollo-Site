@@ -21,6 +21,7 @@
     display: inline-block;
     background-color: silver;
     margin-bottom: 1rem;
+    width: fit-content;
     max-width: 70%;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -33,6 +34,10 @@
     float: right;
 }
 
+.message-content {
+    display: inline-block;
+    /* float: left; */
+}
 
 #messager-user-input {
     min-width: 100%;
