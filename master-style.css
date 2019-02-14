@@ -7,3 +7,10 @@
 html, body {
     margin: 0;
 }
+
+@media only screen and (max-width: 700px) {
+    ::-webkit-scrollbar {
+        width: 0px;  /* remove scrollbar space */
+        background: transparent;  /* optional: just make scrollbar invisible */
+    }
+}
